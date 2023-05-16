@@ -1,79 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
 
-    <link rel="icon" href="devchallenges.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <link rel="icon" href="devchallenges.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Poppins:wght@400;500&family=Space+Mono&display=swap" rel="stylesheet">
+  <title>Devchallenges</title>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    body {
+      font-family: 'Inconsolata', monospace;
+      box-sizing: border-box;
+    }
+
+
+    #container {
+      margin: 1rem;
+      width: 99%;
+  
+    }
+
+
+    .logo {
+     margin: 1rem;
+    }
+
+    .logo-text {
+      font-family: 'Inconsolata';
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 25px;
+      letter-spacing: -0.08em;
+      text-align: left;
+
+    }
+
+    .main-content {
+      width: 100%;
+      padding-top: 100px;
+      margin-left: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+    }
 
     
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    .text-1 {
+      width: 586px;
+      font-weight: 800;
+      font-size: 4rem;
+      font-family: 'Space Mono';
+      line-height: 95px;
+      letter-spacing: -0.035em;
+      text-align: left;
+      margin: 0 10rem;
+      padding: 1rem;
+      color:#333333;
 
-    <title>Devchallenges</title>
+    }
 
-    <style>
-      body {
-        font-family: 'Inconsolata', monospace;
-        box-sizing: border-box;
-      }
+  
+
+    
+
+    .text-2 {
+      width: 381px;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 1rem;
+      font-family: 'Space Mono';
+      line-height: 36px;
+      letter-spacing: -3.5%;
+      text-align: left;
+      margin: 0rem 9rem;
+      padding: 2rem;
+      color: #4F4F4F;
+
       
-
-      #container{
-        margin: 2%;
-
       }
 
-      .header{
-        margin: 2rem ;
-        padding: .25rem;
-      }
+    
 
-      .heading{
-        font-family: 'Space Mono', monospace;
-        display: inline-block;
-       
-        
-      }
-      .text-1{
-        font-weight: 700;
-        font-size: 3rem;
+    .button{
+      font-family: 'Space Mono';
+      margin: 0 11rem;
+      padding: 0 2rem;
+      width: 216px;
+      height:68px;
+      text-align: left;
+      color: white;
+      background: #333333;
 
-      }
+    }
 
-    </style>
-  </head>
-  <body>
-    <div id='container'>
+    @media screen and (max-width:1200px){
+      .main-content{
+        flex-wrap: wrap;
+        margin: 0;
+  
       
+      }
 
-      <!-- logo -->
+    }
 
-      <div class="logo"> <h1>404 NOT FOUND</h1> </div>
-
-      <!-- main body -->
-     <div class="header"> 
+    
 
 
-      <div class="img heading"> <img src="Scarecrow.png" alt="scare crow pic" width="500w" height="400h"></div>
+
+
+  </style>
+</head>
+
+<body>
+  <div id='container'>
+
+
+    <!-- logo -->
+
+    <div class="logo">
+      <h1 class="logo-text">404 NOT FOUND</h1>
+    </div>
+
+    <!-- main body -->
+    <div class="main-content">
+
+      <div class="img"><img src="Scarecrow.png" alt="scare crow pic" width="500" height="400"></div>
+
       <div class="heading">
-
-        <div><h1 class="text-1"> I have bad news for you</h1></div>
-        <div><p> The page you are looking for might be removed or is temporarily unavailable</p></div>
-        <div><button> BACK TO HOMEPAGE </button></div>
+        <h1 class="text-1 "> I have bad news for you</h1>
+        <p class="text-2">The page you are looking for might be removed or is temporarily unavailable</p>
+        <button class="button"> BACK TO HOMEPAGE </button>
       </div>
 
     </div>
-    
-        
-  
 
-  </body>
+
+
+
+</body>
+
 </html>
